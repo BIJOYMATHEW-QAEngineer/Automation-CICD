@@ -38,7 +38,7 @@ public class StandaloneTest {
 	WebElement prod=products.stream().filter(product->
 	product.findElement(By.cssSelector("b")).getText().equals(ProductName)).findFirst().orElse(null);
 	prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
-	
+	//To test the code is workings
 	
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
