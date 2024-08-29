@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel ="tests" name="Suite">
+<listeners>
+<listener class-name="testngFramework.TestComponents.Listeners"></listener>
+
+</listeners>
+
+  <test name="SubmitorderTest">
+    <classes>
+  
+      <class name="testngFramework.Test.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="ErrorValidationTest">
+    <classes>
+      <class name="testngFramework.Test.ErrorValidationTest"/>
+      
+    
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
